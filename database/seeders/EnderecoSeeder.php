@@ -62,6 +62,16 @@ class EnderecoSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
+            [
+                'cep' => '65052-580', 
+                'bairro' => 'Forquilha',
+                'logradouro' => 'Rua Nossa Senhora da Vitória, 26a',
+                'cidade' => 'Paço do Lumiar',
+                'uf' => 'MA',
+                'coordenada' => '-2.5561848724381395, -44.21447457270219',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
         ]);
     }
 }

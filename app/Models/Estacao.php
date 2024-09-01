@@ -15,6 +15,7 @@ class Estacao extends Model
         'nome',
         'horario',
         'contato',
+        'status',
         'endereco_id',
         'gestor_id'
     ];

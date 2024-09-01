@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nome', 100);
             $table->string('horario', 50);
             $table->string('contato', 50);
+            $table->boolean('status');
             $table->foreignId('endereco_id')->constrained('endereco')->onDelete('cascade');
             $table->foreignId('gestor_id')->constrained('gestor')->onDelete('cascade');
             $table->timestamps();

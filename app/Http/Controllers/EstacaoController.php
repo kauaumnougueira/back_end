@@ -19,6 +19,7 @@ class EstacaoController extends Controller
             'nome' => 'required|string|max:100',
             'horario' => 'required|string|max:50',
             'contato' => 'required|string|max:50',
+            'status' => 'required|boolean',
             'endereco_id' => 'required|exists:endereco,id',
             'gestor_id' => 'required|exists:gestor,id',
         ]);
@@ -50,6 +51,7 @@ class EstacaoController extends Controller
             'nome' => 'sometimes|required|string|max:100',
             'horario' => 'sometimes|required|string|max:50',
             'contato' => 'sometimes|required|string|max:50',
+            'status' => 'required|boolean',
             'endereco_id' => 'sometimes|required|exists:endereco,id',
             'gestor_id' => 'sometimes|required|exists:gestor,id',
         ]);
